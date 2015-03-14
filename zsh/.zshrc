@@ -5,7 +5,7 @@ export ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="cloud"
+ZSH_THEME="cloud2"
 
 # Uncomment the following line to use case-sensitive completion.
 CASE_SENSITIVE="true"
@@ -45,7 +45,33 @@ CASE_SENSITIVE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew pod sublime bower coffee gradle npm gem capistrano rails rake rvm pip osx forklift tmux composer2 history-substring-search z forklift)
+plugins=(
+    bower
+    brew
+    bundler
+#    capistrano
+#    coffee
+    composer
+    forklift
+    gem
+    git 
+#    gradle
+    history-substring-search
+    laravel5
+    npm
+    osx
+#    pip
+    pod
+    rails
+    rake
+    rvm
+#    scala
+    sublime
+    tmux
+    xcode
+    z
+    zsh-syntax-highlighting
+)
 
 # User configuration
 
@@ -78,4 +104,6 @@ export LANG=en_US.UTF-8
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# . /usr/local/lib/python2.7/site-packages/powerline/bindings/zsh/powerline.zsh
+setopt HIST_FIND_NO_DUPS
+setopt HIST_IGNORE_ALL_DUPS
+setopt HIST_IGNORE_SPACE
