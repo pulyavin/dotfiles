@@ -48,27 +48,22 @@ CASE_SENSITIVE="true"
 plugins=(
     bower
     brew
-    bundler
 #    capistrano
 #    coffee
     composer
     forklift
     gem
     git 
-#    gradle
     history-substring-search
     laravel5
     npm
-    osx
-#    pip
+    pip
     pod
     rails
     rake
     rvm
 #    scala
     sublime
-    tmux
-    xcode
     z
     zsh-syntax-highlighting
 )
@@ -103,6 +98,8 @@ export LANG=en_US.UTF-8
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+
+alias ll='ls -alF'
 
 setopt HIST_FIND_NO_DUPS
 setopt HIST_IGNORE_ALL_DUPS
